@@ -1,0 +1,6 @@
+-- ClearView DB den BIREYLER TABlosundan veri çekitim
+INSERT INTO LanguageCenter.dbo.[Bireyler] (AD,SOYAD,DOGUM_TARIHI,CINSIYET,TC_KIMLIK_NO)
+SELECT [BIREY_AD],[BIREY_SOYAD],[DOGUM_TARIHI],'E' AS CINSIYET,[KIMLIK_NO]
+FROM ClearView.[dbo].[BIREYLER];
+
+SELECT * FROM Bireyler
